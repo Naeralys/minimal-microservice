@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  user-service:
+    build: ./UserApi
+    ports:
+      - "3002:3002"
+  company-service:
+    build: ./CompanyApi
+    ports:
+      - "3001:3001"

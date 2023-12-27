@@ -25,6 +25,11 @@ app.MapGet("/", () =>
     return "List of users";
 });
 
+app.MapGet("/user/{id}", async (string id) => 
+{
+    return id;
+});
+
 app.MapControllers();
 
 app.Run();
